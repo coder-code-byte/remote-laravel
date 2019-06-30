@@ -116,6 +116,7 @@ return [
         'database_terminal' => '数据库终端',
         'laravel_artisan'   => '工匠指令',
         'routes'            => '路由',
+        'adminuser'         => '一般配置',
     ],
     'prev'                   => '上一步',
     'next'                   => '下一步',
