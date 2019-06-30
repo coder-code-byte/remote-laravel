@@ -22,9 +22,7 @@ class MenuController extends EncoreMenuController
             $tree->disableCreate();
 
             $tree->branch(function ($branch) {
-                $titleTranslation = 'admin.menu_titles.' . trim(str_replace(' ', '_', strtolower($branch['title'])));
-                $title = trans($titleTranslation);
-                $payload = "<i class='fa {$branch['icon']}'></i>&nbsp;<strong>{$title}</strong>";
+                $payload = "<i class='fa {$branch['icon']}'></i>&nbsp;<strong>{$branch['title']}</strong>";
 
                 if (!isset($branch['children'])) {
                     if (url()->isValidUrl($branch['uri'])) {
